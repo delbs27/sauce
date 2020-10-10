@@ -1,0 +1,62 @@
+[23655] 10/10/2020 -- 02:40:28 - (suricata.c:1084) <Notice> (LogVersion) -- This is Suricata version 5.0.1-dev (ba3a2c31b 2019-11-27) running in USER mode
+[23655] 10/10/2020 -- 02:40:28 - (util-cpu.c:171) <Info> (UtilCpuPrintSummary) -- CPUs/cores online: 8
+[23655] 10/10/2020 -- 02:40:28 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- fast output device (regular) initialized: fast.log
+[23655] 10/10/2020 -- 02:40:28 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- eve-log output device (regular) initialized: eve.json
+[23655] 10/10/2020 -- 02:40:28 - (output-json-email-common.c:453) <Info> (OutputEmailInitConf) -- Going to log the md5 sum of email body
+[23655] 10/10/2020 -- 02:40:28 - (output-json-email-common.c:457) <Info> (OutputEmailInitConf) -- Going to log the md5 sum of email subject
+[23655] 10/10/2020 -- 02:40:28 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- http-log output device (regular) initialized: http.log
+[23655] 10/10/2020 -- 02:40:28 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- tls-log output device (regular) initialized: tls.log
+[23655] 10/10/2020 -- 02:40:28 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- stats output device (regular) initialized: stats.log
+[23655] 10/10/2020 -- 02:40:28 - (app-layer-smtp.c:1614) <Error> (SMTPStateGetEventInfo) -- [ERRCODE: SC_ERR_INVALID_ENUM_MAP(15)] - event "mime_long_filename" not present in smtp's enum map table.
+[23655] 10/10/2020 -- 02:40:28 - (detect-app-layer-event.c:209) <Error> (DetectAppLayerEventParseAppP2) -- [ERRCODE: SC_ERR_INVALID_SIGNATURE(39)] - app-layer-event keyword's protocol "smtp" doesn't have event "mime_long_filename" registered
+[23655] 10/10/2020 -- 02:40:28 - (detect-engine-loader.c:185) <Error> (DetectLoadSigFile) -- [ERRCODE: SC_ERR_INVALID_SIGNATURE(39)] - error parsing signature "alert smtp any any -> any any (msg:"SURICATA SMTP filename truncated"; flow:established,to_server; app-layer-event:smtp.mime_long_filename; flowint:smtp.anomaly.count,+,1; classtype:protocol-command-decode; sid:2220020; rev:1;)" from file /var/lib/suricata/rules/suricata.rules at line 263
+[23655] 10/10/2020 -- 02:40:29 - (detect-engine-loader.c:353) <Info> (SigLoadSignatures) -- 1 rule files processed. 21051 rules successfully loaded, 1 rules failed
+[23655] 10/10/2020 -- 02:40:29 - (util-threshold-config.c:1126) <Info> (SCThresholdConfParseFile) -- Threshold config parsed: 0 rule(s) found
+[23655] 10/10/2020 -- 02:40:29 - (detect-engine-build.c:1416) <Info> (SigAddressPrepareStage1) -- 21054 signatures processed. 1265 are IP-only rules, 4000 are inspecting packet payload, 15575 inspect application layer, 103 are decoder event only
+[23655] 10/10/2020 -- 02:40:33 - (tm-threads.c:2164) <Notice> (TmThreadWaitOnThreadInit) -- all 9 packet processing threads, 4 management threads initialized, engine started.
+[23655] 10/10/2020 -- 02:40:33 - (suricata.c:2916) <Notice> (SuricataMainLoop) -- Signal Received.  Stopping engine.
+[23656] 10/10/2020 -- 02:40:33 - (source-pcap-file.c:176) <Info> (ReceivePcapFileLoop) -- Starting file run for case001.pcap
+[23655] 10/10/2020 -- 02:40:33 - (suricata.c:1103) <Info> (SCPrintElapsedTime) -- time elapsed 0.054s
+[23656] 10/10/2020 -- 02:40:33 - (source-pcap-file.c:377) <Notice> (ReceivePcapFileThreadExitStats) -- Pcap-file module read 0 files, 0 packets, 0 bytes
+[23657] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23658] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23659] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23660] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23661] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23662] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23663] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23664] 10/10/2020 -- 02:40:33 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 0 requests
+[23655] 10/10/2020 -- 02:40:33 - (counters.c:853) <Info> (StatsLogSummary) -- Alerts: 0
+[23655] 10/10/2020 -- 02:40:33 - (detect-engine-build.c:1716) <Info> (SigAddressCleanupStage1) -- cleaning up signature grouping structure... complete
+[23669] 10/10/2020 -- 02:40:35 - (suricata.c:1084) <Notice> (LogVersion) -- This is Suricata version 5.0.1-dev (ba3a2c31b 2019-11-27) running in USER mode
+[23669] 10/10/2020 -- 02:40:35 - (util-cpu.c:171) <Info> (UtilCpuPrintSummary) -- CPUs/cores online: 8
+[23669] 10/10/2020 -- 02:40:35 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- fast output device (regular) initialized: fast.log
+[23669] 10/10/2020 -- 02:40:35 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- eve-log output device (regular) initialized: eve.json
+[23669] 10/10/2020 -- 02:40:35 - (output-json-email-common.c:453) <Info> (OutputEmailInitConf) -- Going to log the md5 sum of email body
+[23669] 10/10/2020 -- 02:40:35 - (output-json-email-common.c:457) <Info> (OutputEmailInitConf) -- Going to log the md5 sum of email subject
+[23669] 10/10/2020 -- 02:40:35 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- http-log output device (regular) initialized: http.log
+[23669] 10/10/2020 -- 02:40:35 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- tls-log output device (regular) initialized: tls.log
+[23669] 10/10/2020 -- 02:40:35 - (util-logopenfile.c:474) <Info> (SCConfLogOpenGeneric) -- stats output device (regular) initialized: stats.log
+[23669] 10/10/2020 -- 02:40:35 - (app-layer-smtp.c:1614) <Error> (SMTPStateGetEventInfo) -- [ERRCODE: SC_ERR_INVALID_ENUM_MAP(15)] - event "mime_long_filename" not present in smtp's enum map table.
+[23669] 10/10/2020 -- 02:40:35 - (detect-app-layer-event.c:209) <Error> (DetectAppLayerEventParseAppP2) -- [ERRCODE: SC_ERR_INVALID_SIGNATURE(39)] - app-layer-event keyword's protocol "smtp" doesn't have event "mime_long_filename" registered
+[23669] 10/10/2020 -- 02:40:35 - (detect-engine-loader.c:185) <Error> (DetectLoadSigFile) -- [ERRCODE: SC_ERR_INVALID_SIGNATURE(39)] - error parsing signature "alert smtp any any -> any any (msg:"SURICATA SMTP filename truncated"; flow:established,to_server; app-layer-event:smtp.mime_long_filename; flowint:smtp.anomaly.count,+,1; classtype:protocol-command-decode; sid:2220020; rev:1;)" from file /var/lib/suricata/rules/suricata.rules at line 263
+[23669] 10/10/2020 -- 02:40:36 - (detect-engine-loader.c:353) <Info> (SigLoadSignatures) -- 1 rule files processed. 21051 rules successfully loaded, 1 rules failed
+[23669] 10/10/2020 -- 02:40:36 - (util-threshold-config.c:1126) <Info> (SCThresholdConfParseFile) -- Threshold config parsed: 0 rule(s) found
+[23669] 10/10/2020 -- 02:40:36 - (detect-engine-build.c:1416) <Info> (SigAddressPrepareStage1) -- 21054 signatures processed. 1265 are IP-only rules, 4000 are inspecting packet payload, 15575 inspect application layer, 103 are decoder event only
+[23669] 10/10/2020 -- 02:40:39 - (tm-threads.c:2164) <Notice> (TmThreadWaitOnThreadInit) -- all 9 packet processing threads, 4 management threads initialized, engine started.
+[23670] 10/10/2020 -- 02:40:39 - (source-pcap-file.c:176) <Info> (ReceivePcapFileLoop) -- Starting file run for case001.pcap
+[23670] 10/10/2020 -- 02:40:39 - (util-checksum.c:89) <Info> (ChecksumAutoModeCheck) -- No packets with invalid checksum, assuming checksum offloading is NOT used
+[23670] 10/10/2020 -- 02:40:44 - (source-pcap-file-helper.c:149) <Info> (PcapFileDispatch) -- pcap file case001.pcap end of file reached (pcap err code 0)
+[23669] 10/10/2020 -- 02:40:44 - (suricata.c:2916) <Notice> (SuricataMainLoop) -- Signal Received.  Stopping engine.
+[23669] 10/10/2020 -- 02:40:52 - (suricata.c:1103) <Info> (SCPrintElapsedTime) -- time elapsed 13.011s
+[23670] 10/10/2020 -- 02:41:06 - (source-pcap-file.c:377) <Notice> (ReceivePcapFileThreadExitStats) -- Pcap-file module read 1 files, 411797 packets, 183854754 bytes
+[23671] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3910 requests
+[23672] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3909 requests
+[23673] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3830 requests
+[23674] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3752 requests
+[23675] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3836 requests
+[23676] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3686 requests
+[23677] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3750 requests
+[23678] 10/10/2020 -- 02:41:06 - (log-tlslog.c:201) <Info> (LogTlsLogExitPrintStats) -- TLS logger logged 3780 requests
+[23669] 10/10/2020 -- 02:41:06 - (counters.c:853) <Info> (StatsLogSummary) -- Alerts: 454
+[23669] 10/10/2020 -- 02:41:07 - (detect-engine-build.c:1716) <Info> (SigAddressCleanupStage1) -- cleaning up signature grouping structure... complete
