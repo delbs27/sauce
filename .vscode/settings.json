@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/home/delbs/miniconda3/envs/sauce/bin/python3.8",
+    "python.pythonPath": "sauce_venv/bin/python",
     "python.dataScience.jupyterServerURI": "local"
 }
